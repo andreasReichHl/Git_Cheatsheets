@@ -44,7 +44,7 @@ li {
     list-style: none;
     font-size: 20px;
     font-family: "Courier New", Courier, monospace;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 li::before {
@@ -66,17 +66,19 @@ ul {
 .box {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: rgb(46, 46, 46);
+    border: 1px solid grey;
+    /* background-color: rgb(46, 46, 46); */
     padding: 5px;
-    color: rgb(171, 171, 171);
+    color: rgb(41, 41, 41);
 }
 
 .text {
     padding: 10px;
     margin-bottom: 30px;
-    background-color: black;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: white;
     font-weight: lighter;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
 }
