@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/style.css" />
+        <title>Cheatsheet für Git</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mein Cheat Sheet für Git</h1>
+            <h2>
+                Git ist eine freie Software zur verteilten Versionverwaltung von
+                Dateien.
+            </h2>
+        </header>
+        <section>
+            <h3>Top Eingaben ins Terminal für die Verwendung von git</h3>
+            <ul>
+                <div class="box">
+                    <li>git -v</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Zeigt die aktuelle Git-Version an, die auf Ihrem System
+                        installiert ist.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git init</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um ein neues Git-Repostory zu
+                        initalisieren.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git add .</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um alle Änderungen in Ihrem
+                        Arbeitsverzeichnis zur Staging-Area (auch "Index"
+                        genannt) hinzuzufügen, damit sie im nächsten Commit
+                        erfasst werden können.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git add dateiname</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um eine spezifische Datei zur
+                        Staging-Area (auch "Index" genannt) hinzuzufügen.Nur
+                        diese ausgewählte Datei wird dann in den nächsten Commit
+                        aufgenommen.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git commit -m "was geändert wurde"</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um die Änderungen, die sich
+                        in der Staging-Area befinden, in einem neuen Commit zu
+                        speichern. Der -m-Schalter ermöglicht es Ihnen, eine
+                        Commit-Nachricht direkt in der Befehlszeile zu
+                        schreiben.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git status</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl zeigt den aktuellen Zustand des
+                        Arbeitsverzeichnisses und der Staging-Area in einem
+                        Git-Repository an. Es ist ein nützlicher Befehl, um den
+                        Überblick über die Änderungen zu behalten, die Sie seit
+                        dem letzten Commit vorgenommen haben.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git diff</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um die Unterschiede (Diffs)
+                        zwischen verschiedenen Zuständen von Dateien in einem
+                        Git-Repository anzuzeigen. Es ist ein nützliches
+                        Werkzeug, um den genauen Inhalt von Änderungen zu
+                        überprüfen, bevor diese in einem Commit gespeichert
+                        werden.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git restore</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um die Unterschiede (Diffs)
+                        zwischen verschiedenen Zuständen von Dateien in einem
+                        Git-Repository anzuzeigen. Es ist ein nützliches
+                        Werkzeug, um den genauen Inhalt von Änderungen zu
+                        überprüfen, bevor diese in einem Commit gespeichert
+                        werden.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git branch branchname</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl git wird verwendet, um einen neuen Branch in
+                        einem Git-Repository zu erstellen. Dieser neue Branch
+                        ist eine Kopie des aktuellen Branches, auf dem Sie sich
+                        befinden.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git branch -a (Kurzform für --all)</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl git branch -a zeigt eine Liste aller Branches
+                        in einem Git-Repository an, einschließlich sowohl der
+                        lokalen als auch der entfernten Branches. Der Schalter
+                        -a ist die Kurzform für --all.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git checkout</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um zu einem anderen Branch zu
+                        wechseln oder eine bestimmte Version von Dateien oder
+                        Commits wiederherzustellen.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git checkout name</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Wechselt zu einem bestehenden Branch mit dem Namen name.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git checkout -b name</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um einen neuen Branch zu
+                        erstellen und gleichzeitig zu diesem neuen Branch zu
+                        wechseln. Dies ist eine gängige Methode, um in Git einen
+                        neuen Branch zu beginnen, der auf dem aktuellen Branch
+                        basiert.
+                    </p>
+                </div>
+                <div class="box"><li>git switch -c feature-x</li></div>
+                <div class="text">
+                    <p>
+                        In neueren Versionen von Git können Sie auch git switch
+                        verwenden, um einen neuen Branch zu erstellen und zu
+                        wechseln:
+                    </p>
+                    <p>
+                        git checkout -b name: Erstellt einen neuen Branch mit
+                        dem Namen name und wechselt sofort zu diesem neuen
+                        Branch.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git push</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um Ihre lokalen Commits auf
+                        ein entferntes Git-Repository (Remote) zu übertragen.
+                        Dies ist der Prozess, bei dem Sie Ihre Änderungen, die
+                        Sie lokal gemacht haben, auf den Remote-Server
+                        hochladen, damit andere Personen diese Änderungen sehen
+                        und mit ihnen arbeiten können.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git pull</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl git pull wird verwendet, um Änderungen von
+                        einem Remote-Repository in Ihr lokales Repository zu
+                        holen und diese Änderungen automatisch in den aktuellen
+                        Branch zu integrieren. Er kombiniert zwei wichtige
+                        Git-Befehle: git fetch (um die neuesten Änderungen vom
+                        Remote-Repository herunterzuladen) und git merge (um
+                        diese Änderungen in den aktuellen Branch zu
+                        integrieren).
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git merge</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um die Änderungen von einem
+                        Branch in einen anderen Branch zu integrieren. Dies ist
+                        ein zentraler Bestandteil des Workflows in Git,
+                        insbesondere wenn Sie mehrere Branches verwenden, um
+                        verschiedene Features, Bugfixes oder Versionen zu
+                        entwickeln.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git revert</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um die Änderungen eines
+                        spezifischen Commits rückgängig zu machen, indem ein
+                        neuer Commit erstellt wird, der die Änderungen des
+                        angegebenen Commits aufhebt. Dieser Befehl ist nützlich,
+                        wenn Sie eine fehlerhafte Änderung oder einen Commit
+                        rückgängig machen möchten, ohne die Historie des
+                        Projekts zu verändern.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git revert --abort</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl wird verwendet, um einen Revert-Vorgang
+                        abzubrechen, wenn er nicht abgeschlossen werden kann
+                        oder wenn während des Revert-Vorgangs Konflikte
+                        auftreten, die Sie nicht lösen möchten. Dies ist
+                        nützlich, um den aktuellen Revert-Versuch zurückzusetzen
+                        und den Zustand des Repositories vor dem Revert-Versuch
+                        wiederherzustellen.
+                    </p>
+                </div>
+                <div class="box">
+                    <li>git log --oneline --graph</li>
+                </div>
+                <div class="text">
+                    <p>
+                        Der Befehl git log --oneline --graph ist ein nützlicher
+                        Git-Befehl, der eine kompakte und visuelle Darstellung
+                        der Commit-Historie eines Repositories bietet. Dieser
+                        Befehl zeigt die Historie der Commits in einer
+                        vereinfachten Form an und verwendet ASCII-Grafiken, um
+                        die Branches und Merge-Historie zu visualisieren.
+                    </p>
+                </div>
+            </ul>
+        </section>
+    </body>
+</html>
